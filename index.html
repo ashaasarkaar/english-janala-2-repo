@@ -31,39 +31,54 @@
 <body>
 
   <!-- Navbar Style Start-->
-  <header class="bg-[rgb(160,145,235)]">
+  <header class="bg-sky-100">
     <div class="navbar shadow-sm">
-    <div class="navbar-start">
-      <div class="dropdown">
-        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-          </svg>
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <!-- Hidden Menu Bar -->
+          <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+            <li><a><i class="fa-solid fa-circle-question"></i>FAQ</a></li>
+            <li><a><i class="fa-solid fa-book-open"></i>Learn</a></li>
+            <li><a><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
+          </ul>
         </div>
-        <!-- Hidden Menu Bar -->
-        <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-          <li><a><i class="fa-solid fa-circle-question"></i>FAQ</a></li>
-          <li><a><i class="fa-solid fa-book-open"></i>Learn</a></li>
-          <li><a><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
+        <!-- Home Page Logo Site Style -->
+        <div class="flex items-center space-x-1">
+          <a class="text-lg font-bold">English</a>
+          <img src="./assets/logo.png" alt="windows-logo">
+          <a class="text-lg font-semibold font-bangla">জানালা</a>
+        </div>
+      </div>
+      <div class="navbar-end hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 space-x-2">
+          <li><a class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i>FAQ</a></li>
+          <li><a class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i>Learn</a></li>
+          <li><a class="btn btn-outline btn-primary"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
         </ul>
       </div>
-      <!-- Home Page Logo Site Style -->
-      <div class="flex items-center space-x-1">
-        <a class="text-lg font-bold">English</a>
-        <img src="./assets/logo.png" alt="windows-logo">
-        <a class="text-lg font-semibold font-bangla">জানালা</a>
-      </div>
     </div>
-    <div class="navbar-end hidden lg:flex">
-      <ul class="menu menu-horizontal px-1 space-x-2">
-        <li><a class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i>FAQ</a></li>
-        <li><a class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i>Learn</a></li>
-        <li><a class="btn btn-outline btn-primary"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
-      </ul>
-    </div>
-  </div>
   </header>
-    <!-- Navbar Style END-->
+  <!-- Navbar Style END-->
+
+  <!-- Banner Section START -->
+
+<section class="banner flex flex-col-reverse md:flex-row justify-between items-center w-11/12 mx-auto py-5 gap-10">
+
+  <div class="content flex-1 text-center md:text-left">
+    <h1 class="text-4xl mb-5 font-bold"><span class="text-sky-500">English</span> is Easy!!</h1>
+    <p class="font-bangla font-semibold">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা <br>আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে <br>যাবে অন্য একটি Level এ</p>
+  </div>
+  <div class="img flex-1">
+    <img src="./assets/hero-student.png" alt="banner-image">
+  </div> 
+</section>
+  <!-- Banner Section END -->
 
   <!-- link with js -->
 
