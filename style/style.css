@@ -6,3 +6,9 @@
 .font-bangla{
     font-family: "Hind Siliguri", sans-serif;
 }
+/* style for active btn */
+.active{
+    background-color: #422AD5;
+    color: white;
+
+}

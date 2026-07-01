@@ -67,7 +67,6 @@
   <!-- Navbar Style END-->
 
   <!-- Banner Section START -->
-
   <section class="banner flex flex-col-reverse md:flex-row justify-between items-center w-11/12 mx-auto py-5 gap-10">
 
     <div class="content flex-1 text-center md:text-left space-y-5">
@@ -91,7 +90,101 @@
   </section>
   <!-- Banner Section END -->
 
+  <!-- Learn Vocabularies Section START -->
+   <section class="learn-vocabularies">
+    <h2 class="text-4xl mb-5 font-bold text-center">
+      <span class="text-sky-500">Let's</span> Learn Vocabularies
+    </h2>
+
+    <div class="flex gap-5 flex-wrap justify-center mb-8" id="load-level">
+
+    </div>
+
+   </section>
+   <!-- Learn Vocabularies Section END -->
+
+   <!-- search section START -->
+    <div class="join flex justify-center items-center mb-6">
+  <div class="">
+    <label class="input validator join-item">
+      
+      <input id="search-input" type="text" placeholder="Search Your vocabulary" required />
+    </label>
+  
+  </div>
+  <button id="search-btn" class="btn btn-primary join-item">Search</button>
+</div>
+   <!-- search section END -->
+
+   <!--Spinner Section START -->
+   <section id="spinner" class="flex justify-center items-center hidden">
+    <span class="loading loading-spinner text-primary"></span>
+<span class="loading loading-spinner text-secondary"></span>
+<span class="loading loading-spinner text-accent"></span>
+<span class="loading loading-spinner text-neutral"></span>
+<span class="loading loading-spinner text-info"></span>
+<span class="loading loading-spinner text-success"></span>
+<span class="loading loading-spinner text-warning"></span>
+<span class="loading loading-spinner text-error"></span>
+   </section>
+   <!-- Spinner Section END -->
+
+   <!-- LevelWord Details Section START -->
+    <section class="bg-gray-100 p-10 w-11/12 mx-auto grid grid-cols-3 gap-5 mb-10 rounded-2xl" id="load-words">
+   
+
+      <!-- make card for selection next lesson START -->
+      <div class="col-span-full space-y-4 text-center font-bangla p-10">
+        <h5 class="text-[#79716B]">আপনি এখনো কোন Lesson Select করেন নি </h5>
+        <h1 class="font-medium text-4xl text-[#292524]">একটি Lesson Select করুন।</h1>
+      </div>
+       <!-- make card for selection next lesson END --> 
+
+    </section>
+   <!-- LevelWord Details Section END -->
+<!-- 
+   {
+    "word": "Cautious",
+    "meaning": "সতর্ক",
+    "pronunciation": "কশাস",
+    "level": 2,
+    "sentence": "Be cautious while crossing the road.",
+    "points": 2,
+    "partsOfSpeech": "adjective",
+    "synonyms": [
+        "careful",
+        "alert",
+        "watchful"
+    ],
+    "id": 3
+} -->
+
+   <!-- Modal Code START -->
+     <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+<dialog id="modal_details" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+  <div id="modal_details_container" class="space-y-5">
+
+
+
+  </div>
+    <div class="modal-action"> 
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+     <!-- Modal Code END -->
+
+ 
+
+
+
   <!-- link with js -->
+   <script src="./script/index.js"></script>
 
 </body>
 
